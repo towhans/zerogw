@@ -165,6 +165,7 @@ __types__:
       Cookie: 5
       Body: 6
       IP: 7
+      Literal: 8
     __value__: !String ~
     _field_index: !Int -1
 

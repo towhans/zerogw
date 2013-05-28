@@ -21,6 +21,9 @@ const char *get_field(request_t *req, config_RequestField_t*value, size_t*len) {
     case CONFIG_Header:
         result = req->ws.headerindex[value->_field_index];
         break;
+    case CONFIG_Literal:
+        result = value->value;
+        break;
     case CONFIG_Uri:
         result = req->ws.uri;
         break;
